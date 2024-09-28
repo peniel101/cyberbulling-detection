@@ -16,6 +16,7 @@ services:
     volumes:
       - ./:/app/
       - ~/.config/gcloud/:/home/${USER_NAME:-kyuksel}/.config/gcloud
+      - ~/.ssh:${HOME}/.ssh
     ports:
       - 8080:8080
 
