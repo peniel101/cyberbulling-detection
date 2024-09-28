@@ -4,9 +4,9 @@ services:
   app:
     user: "${USER_ID:-1000}"
     hostname: "${HOST_NAME:-emkademy}"
-    image: cybulde-template
+    image: cyberbulling-detection
     platform: linux/amd64
-    container_name: cybulde-template-container
+    container_name: cyberbulling-detection-container
     build:
       context: .
       dockerfile: ./docker/Dockerfile
